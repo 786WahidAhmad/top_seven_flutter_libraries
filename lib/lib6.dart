@@ -14,7 +14,7 @@ class _Lib6State extends State<Lib6> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("Flutter_Linkify")),
+        title: Center(child: Text("Flutter_Linkify & Url_Launcher")),
       ),
       body: Center(
         child: Linkify(

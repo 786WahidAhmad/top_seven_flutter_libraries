@@ -9,6 +9,7 @@ class Lib3 extends StatefulWidget {
 }
 
 class _Lib3State extends State<Lib3> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,6 +18,7 @@ class _Lib3State extends State<Lib3> {
       ),
       body: Container(
         child: PhotoView(
+          backgroundDecoration: BoxDecoration(),
           imageProvider: AssetImage("images/photo.jpg"),
         ),
       ),

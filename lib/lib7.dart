@@ -10,10 +10,11 @@ class Lib7 extends StatefulWidget {
 
 class _Lib7State extends State<Lib7> {
   final List<String> items = [
-    'Item1',
-    'Item2',
-    'Item3',
-    'Item4',
+    'Option 1',
+    'Option 2',
+    'Option 3',
+    'Option 4',
+    'Option 5',
   ];
   String? selectedValue;
   @override
@@ -29,9 +30,9 @@ class _Lib7State extends State<Lib7> {
           child: DropdownButton2<String>(
             isExpanded: true,
             hint: Text(
-              'Select Item',
+              'Select Option',
               style: TextStyle(
-                fontSize: 14,
+                fontSize: 20,
                 color: Theme.of(context).hintColor,
               ),
             ),
@@ -41,7 +42,7 @@ class _Lib7State extends State<Lib7> {
                       child: Text(
                         item,
                         style: const TextStyle(
-                          fontSize: 14,
+                          fontSize: 20,
                         ),
                       ),
                     ))
@@ -54,11 +55,11 @@ class _Lib7State extends State<Lib7> {
             },
             buttonStyleData: const ButtonStyleData(
               padding: EdgeInsets.symmetric(horizontal: 16),
-              height: 40,
-              width: 140,
+              height: 50,
+              width: 180,
             ),
             menuItemStyleData: const MenuItemStyleData(
-              height: 40,
+              height: 50,
             ),
           ),
         ),

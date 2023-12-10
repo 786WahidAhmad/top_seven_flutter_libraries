@@ -13,7 +13,7 @@ class _Lib4State extends State<Lib4> {
     itemBuilder: (BuildContext context, int index) {
       return DecoratedBox(
         decoration: BoxDecoration(
-          color: index.isEven ? Colors.red : Colors.green,
+          color: index.isEven ? Colors.lightBlue : Colors.lightGreen,
         ),
       );
     },

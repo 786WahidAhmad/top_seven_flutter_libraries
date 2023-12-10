@@ -13,7 +13,7 @@ class _Lib2State extends State<Lib2> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Center(child: Text("Share_Plus")),
+          title: Center(child: Text("Share_Plus", )),
         ),
         body: Center(
           child: ElevatedButton(
@@ -21,7 +21,7 @@ class _Lib2State extends State<Lib2> {
               Share.share('https://www.google.com',
                   subject: 'Look what I made!');
             },
-            child: Text("Share"),
+            child: Text("Share", style: TextStyle(fontSize: 40),),
           ),
         ));
   }

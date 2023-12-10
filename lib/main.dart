@@ -36,6 +36,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
         actions: [
           PopupMenuItem(
@@ -52,7 +53,7 @@ class _MyAppState extends State<MyApp> {
         ],
         title: Center(
           child: Text(
-            "Top Seven Libraries",
+            "Top Seven Flutter Libraries",
           ),
         ),
       ),

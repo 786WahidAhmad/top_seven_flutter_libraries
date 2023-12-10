@@ -10,6 +10,7 @@ class Lib1 extends StatefulWidget {
 
 class _Lib1State extends State<Lib1> {
   var name = "";
+  int _num = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,7 +23,7 @@ class _Lib1State extends State<Lib1> {
           children: [
             IconButton(
               iconSize: 60.0,
-              icon: FaIcon(FontAwesomeIcons.amazon),
+              icon: FaIcon(FontAwesomeIcons.fortAwesome),
               onPressed: () {
                 setState(() {
                   if (name == "") {
@@ -34,9 +35,42 @@ class _Lib1State extends State<Lib1> {
               },
             ),
             SizedBox(
-              height: 80,
+              height: 50,
             ),
             Text("$name"),
+            SizedBox(
+              height: 80,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  iconSize: 60.0,
+                  icon: FaIcon(FontAwesomeIcons.add),
+                  onPressed: () {
+                    setState(() {
+                      _num++;
+                    });
+                  },
+                ),
+                SizedBox(
+                  width: 80,
+                ),
+                IconButton(
+                  iconSize: 60.0,
+                  icon: FaIcon(FontAwesomeIcons.minus),
+                  onPressed: () {
+                    setState(() {
+                      _num--;
+                    });
+                  },
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Text("$_num", style: TextStyle(fontSize: 40),),
           ],
         ),
       ),

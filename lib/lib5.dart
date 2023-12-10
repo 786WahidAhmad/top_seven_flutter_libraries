@@ -17,16 +17,16 @@ class _Lib5State extends State<Lib5> {
       ),
       body: Center(
         child: SizedBox(
-          width: 200.0,
-          height: 100.0,
+          width: 400.0,
+          height: 200.0,
           child: Shimmer.fromColors(
-            baseColor: Colors.red,
+            baseColor: Colors.blue,
             highlightColor: Colors.yellow,
             child: Text(
-              'Shimmer',
+              'Code4Fun',
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 40.0,
+                fontSize: 50.0,
                 fontWeight: FontWeight.bold,
               ),
             ),
